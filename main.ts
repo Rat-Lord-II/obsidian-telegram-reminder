@@ -152,7 +152,7 @@ export default class MyPlugin extends Plugin {
 
     dates.forEach(item => {
       const regex = /^(?<prefix>((> ?)*)?\s*[-*][ ]+\[)(?<check>.)(?<suffix>\]\s+)(?<body>.*)$/
-      const regexBody = /^(?<title1>.*?)\(@(?<time>.+?)\)(?<title2>.*)$/
+      const regexBody = /^(?<title1>.*?)(?:@|\⏰)\s*(?<time>.+?)\s*(?:📅\s*(?<date>.+?))?$/
       const found = regex.exec(item)
 
       if (found && found.groups && found.groups.body) {
