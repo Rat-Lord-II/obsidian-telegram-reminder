@@ -42,3 +42,14 @@ You can set reminders for items using the following format:
 ## Support
 
 https://www.donationalerts.com/r/ibird
+
+## UPD
+
+Task date format:
+
+```
+- [ ] remind me! ⏰20:55 📅 2025-07-12
+```
+
+As no Telegram client is used, look up https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id for getting chatID
+ 
